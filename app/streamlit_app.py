@@ -50,14 +50,18 @@ p30 = preds[preds["horizon_min"] == 30].set_index("station_id")
 status = status.join(p30[["predicted_bikes", "p_empty", "p_full"]], on="station_id")
 
 with tab_map:
-    st.write("Colour shows the risk in **30 minutes**: red = likely empty, orange = likely full.")
+    st.write("Colour shows the risk in **30 minutes**: red = likely empty, orange = likely full, "
+             "grey = closed or no prediction.")
     fmap = folium.Map(location=[53.347, -6.26], zoom_start=14)
     for _, r in status.iterrows():
-        colour = "red" if r["p_empty"] > 0.5 else "orange" if r["p_full"] > 0.5 else "green"
-        folium.CircleMarker(
-            [r["lat"], r["lon"]], radius=7, color=colour, fill=True, fill_opacity=0.8,
-            tooltip=(f"{r['name']}: {r['bikes']} bikes now, about {r['predicted_bikes']:.0f} in 30 min "
-                     f"(empty {r['p_empty']:.0%}, full {r['p_full']:.0%})")).add_to(fmap)
+        if pd.isna(r["predicted_bikes"]):  # station closed / not renting, so the model skips it
+            colour, tip = "grey", f"{r['name']}: not renting right now, no prediction"
+        else:
+            colour = "red" if r["p_empty"] > 0.5 else "orange" if r["p_full"] > 0.5 else "green"
+            tip = (f"{r['name']}: {r['bikes']} bikes now, about {r['predicted_bikes']:.0f} in 30 min "
+                   f"(empty {r['p_empty']:.0%}, full {r['p_full']:.0%})")
+        folium.CircleMarker([r["lat"], r["lon"]], radius=7, color=colour, fill=True,
+                            fill_opacity=0.8, tooltip=tip).add_to(fmap)
     st_folium(fmap, height=550, use_container_width=True)
 
 with tab_station:
@@ -72,8 +76,11 @@ with tab_station:
         if h in mine.index:
             col.metric(f"In {h} min", f"{mine.loc[h, 'predicted_bikes']:.0f}",
                        f"{mine.loc[h, 'predicted_bikes'] - row['bikes']:+.1f}")
-    st.write(f"Chance it is **empty** in 30 minutes: **{row['p_empty']:.0%}**, "
-             f"**full**: **{row['p_full']:.0%}**")
+    if pd.isna(row["p_empty"]):
+        st.write("This station is not renting right now, so there is no prediction for it.")
+    else:
+        st.write(f"Chance it is **empty** in 30 minutes: **{row['p_empty']:.0%}**, "
+                 f"**full**: **{row['p_full']:.0%}**")
 
 with tab_accuracy:
     acc = store.prediction_accuracy(days=14)
