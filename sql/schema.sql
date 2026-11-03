@@ -53,6 +53,7 @@ from predictions p
 join lateral (
     select bikes from snapshots s
     where s.station_id = p.station_id
+      and s.last_reported >  p.made_at  -- only readings taken after the prediction was made
       and s.last_reported <= p.target_time
       and s.last_reported >  p.target_time - interval '10 minutes'
     order by s.last_reported desc
