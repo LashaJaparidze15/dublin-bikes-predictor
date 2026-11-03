@@ -84,7 +84,10 @@ with tab_station:
 
 with tab_accuracy:
     acc = store.prediction_accuracy(days=14)
-    if acc.empty:
+    if acc.empty and store._db_url():
+        st.info("Connected to the database, but no predictions have been checked yet. Each one is "
+                "checked once its target time has passed (10 to 60 minutes after it is made).")
+    elif acc.empty:
         st.info("Live accuracy tracking needs the Supabase database (set DATABASE_URL). "
                 "Every collector run logs its predictions there and the prediction_accuracy view "
                 "compares them with what actually happened.")
