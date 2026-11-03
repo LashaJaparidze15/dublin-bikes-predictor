@@ -44,7 +44,7 @@ adds nothing to the 30-minute prediction, because the current count already refl
 **Q4. Commuter pattern.** Yes. K-means on weekday profiles finds a group of stations that fills
 up in the morning (the south-east office district: Merrion Square, St Stephen's Green East) and
 one that empties (mainly the rail hubs: Heuston and the area around Connolly). People arrive by
-train and ride the last stretch to work. Map: `notebooks/station_clusters_map.html`.
+train and ride the last stretch to work.
 
 ## Repository layout
 
