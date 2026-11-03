@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4f223a4c67eda78de54fd57179040f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b4f223a4c67eda78de54fd57179040f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b4f223a4c67eda78de54fd57179040f1 = L.map(
+                "map_b4f223a4c67eda78de54fd57179040f1",
+                {
+                    center: [53.3472, -6.2592],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c799ed971ded47bca0cdd0b50fc064d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1c799ed971ded47bca0cdd0b50fc064d.addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            var circle_marker_abc9790a8219f2e849dc1f22f2048ce8 = L.circleMarker(
+                [53.340927, -6.262501],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_abc9790a8219f2e849dc1f22f2048ce8.bindTooltip(
+                `<div>
+                     CLARENDON ROW: fills in the morning (+0.45)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_345deb50490b7c68497f42aa4d4081a3 = L.circleMarker(
+                [53.35677, -6.26814],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_345deb50490b7c68497f42aa4d4081a3.bindTooltip(
+                `<div>
+                     BLESSINGTON STREET: steady, mostly empty (-0.15)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31b29b0b8970cc3738793a3f5a3f822c = L.circleMarker(
+                [53.35118, -6.269859],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_31b29b0b8970cc3738793a3f5a3f822c.bindTooltip(
+                `<div>
+                     BOLTON STREET: empties a little (+0.02)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99842ea77247db582d0dbb8eac61e2ed = L.circleMarker(
+                [53.346874, -6.272976],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_99842ea77247db582d0dbb8eac61e2ed.bindTooltip(
+                `<div>
+                     GREEK STREET: empties a little (+0.26)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90f8bf4a5541dcaf6fe064bc5d91afe4 = L.circleMarker(
+                [53.330704, -6.260004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_90f8bf4a5541dcaf6fe064bc5d91afe4.bindTooltip(
+                `<div>
+                     CHARLEMONT PLACE: empties in the morning (-0.44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68c3505a5244c474821e12956d1b3e3a = L.circleMarker(
+                [53.34337, -6.27012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_68c3505a5244c474821e12956d1b3e3a.bindTooltip(
+                `<div>
+                     CHRISTCHURCH PLACE: steady, mostly empty (-0.04)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f5261fa9d17c1802aeec22594d18c4d = L.circleMarker(
+                [53.34342, -6.2744136],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_9f5261fa9d17c1802aeec22594d18c4d.bindTooltip(
+                `<div>
+                     HIGH STREET: steady, mostly empty (-0.12)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09b4bc152f823cc087a60aa5c955dfd8 = L.circleMarker(
+                [53.347885, -6.248048],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_09b4bc152f823cc087a60aa5c955dfd8.bindTooltip(
+                `<div>
+                     CUSTOM HOUSE QUAY: empties in the morning (-0.27)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c36971fbbd6774235b0edc85f215a030 = L.circleMarker(
+                [53.343033, -6.263578],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_c36971fbbd6774235b0edc85f215a030.bindTooltip(
+                `<div>
+                     EXCHEQUER STREET: fills in the morning (+0.46)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ef81aca4a1483f0dd9521ed49b08167 = L.circleMarker(
+                [53.344006, -6.266802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_5ef81aca4a1483f0dd9521ed49b08167.bindTooltip(
+                `<div>
+                     DAME STREET: empties in the morning (+0.10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd47da6ef9bae618ac604760bc73fa91 = L.circleMarker(
+                [53.334293, -6.258503],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_cd47da6ef9bae618ac604760bc73fa91.bindTooltip(
+                `<div>
+                     EARLSFORT TERRACE: fills in the morning (+0.51)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_491a0595ede54cd2be0c876ae9067c3a = L.circleMarker(
+                [53.359245, -6.269779],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_491a0595ede54cd2be0c876ae9067c3a.bindTooltip(
+                `<div>
+                     ECCLES STREET: steady, mostly empty (-0.17)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29d9cad43e7e2e21f9a19fe7aaa7e770 = L.circleMarker(
+                [53.336075, -6.252825],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_29d9cad43e7e2e21f9a19fe7aaa7e770.bindTooltip(
+                `<div>
+                     FITZWILLIAM SQUARE WEST: steady, mostly empty (+0.29)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5cde0a55bd051839bebb7203c4fcc3a = L.circleMarker(
+                [53.344604, -6.263371],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_c5cde0a55bd051839bebb7203c4fcc3a.bindTooltip(
+                `<div>
+                     FOWNES STREET UPPER: empties a little (+0.27)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b58b39c2937c4163d74fc06adaf86de = L.circleMarker(
+                [53.355473, -6.264423],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_3b58b39c2937c4163d74fc06adaf86de.bindTooltip(
+                `<div>
+                     HARDWICKE STREET: steady, mostly empty (-0.09)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfa6497bd47697bde531d354ea9a2364 = L.circleMarker(
+                [53.347507, -6.252192],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_dfa6497bd47697bde531d354ea9a2364.bindTooltip(
+                `<div>
+                     GEORGES QUAY: empties a little (-0.01)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65fc36a0b48beb7a30b9f974d6846d03 = L.circleMarker(
+                [53.3408, -6.267732],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_65fc36a0b48beb7a30b9f974d6846d03.bindTooltip(
+                `<div>
+                     GOLDEN LANE: steady, mostly empty (+0.09)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58cc4dfceabb65cdfa1343061a6c1064 = L.circleMarker(
+                [53.334126, -6.2656674],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_58cc4dfceabb65cdfa1343061a6c1064.bindTooltip(
+                `<div>
+                     GRANTHAM STREET: empties a little (-0.20)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3dbd2cf2333bc9e0ed03dd3f883a14e = L.circleMarker(
+                [53.3347, -6.245139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d3dbd2cf2333bc9e0ed03dd3f883a14e.bindTooltip(
+                `<div>
+                     HERBERT PLACE: fills in the morning (+0.77)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94ac72ec3926e10a167f3e741723c878 = L.circleMarker(
+                [53.336487, -6.248174],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_94ac72ec3926e10a167f3e741723c878.bindTooltip(
+                `<div>
+                     JAMES STREET EAST: fills in the morning (+0.76)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_746851dc7eb94f7b4bba97ecbfbcad74 = L.circleMarker(
+                [53.342144, -6.2541847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_746851dc7eb94f7b4bba97ecbfbcad74.bindTooltip(
+                `<div>
+                     LEINSTER STREET SOUTH: fills in the morning (+0.44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3833c6c9170e8fb0335bcf4a2ca5512a = L.circleMarker(
+                [53.34592, -6.254614],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_3833c6c9170e8fb0335bcf4a2ca5512a.bindTooltip(
+                `<div>
+                     TOWNSEND STREET: empties a little (-0.03)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d3e11fc72d9836c73ae75d685cf8b22 = L.circleMarker(
+                [53.34828, -6.254358],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_3d3e11fc72d9836c73ae75d685cf8b22.bindTooltip(
+                `<div>
+                     CUSTOM HOUSE: empties in the morning (-0.03)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37c1384f7cfd9b8294509439fbf216ad = L.circleMarker(
+                [53.352215, -6.260328],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_37c1384f7cfd9b8294509439fbf216ad.bindTooltip(
+                `<div>
+                     CATHAL BRUGHA STREET: empties a little (-0.05)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_737bffe1e72347c59818822bc70b9394 = L.circleMarker(
+                [53.33907, -6.247006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_737bffe1e72347c59818822bc70b9394.bindTooltip(
+                `<div>
+                     MERRION SQUARE EAST: fills in the morning (+0.51)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_274b7fc79c1f97f3c08eb3fa74d64f17 = L.circleMarker(
+                [53.34007, -6.251716],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_274b7fc79c1f97f3c08eb3fa74d64f17.bindTooltip(
+                `<div>
+                     MERRION SQUARE WEST: fills in the morning (+0.52)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70b06eed3c0eba92f98523b5b14f681b = L.circleMarker(
+                [53.341236, -6.2575936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_70b06eed3c0eba92f98523b5b14f681b.bindTooltip(
+                `<div>
+                     MOLESWORTH STREET: fills in the morning (+0.67)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5875d7a4d50e573a04bbcc9f0221c107 = L.circleMarker(
+                [53.3563, -6.258586],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_5875d7a4d50e573a04bbcc9f0221c107.bindTooltip(
+                `<div>
+                     MOUNTJOY SQUARE WEST: empties a little (-0.17)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_840425a8eeaf993b544536fbf140e300 = L.circleMarker(
+                [53.346107, -6.268345],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_840425a8eeaf993b544536fbf140e300.bindTooltip(
+                `<div>
+                     ORMOND QUAY UPPER: empties a little (-0.00)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e46a9f8c95fd5fd2fb1790beb9d222cd = L.circleMarker(
+                [53.35374, -6.265301],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_e46a9f8c95fd5fd2fb1790beb9d222cd.bindTooltip(
+                `<div>
+                     PARNELL SQUARE NORTH: steady, mostly empty (+0.09)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7009c255a5a6ce6e6abe80fd8d2fb420 = L.circleMarker(
+                [53.35093, -6.265125],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_7009c255a5a6ce6e6abe80fd8d2fb420.bindTooltip(
+                `<div>
+                     PARNELL STREET: empties a little (-0.11)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59f7d56a494803e78528921b55a9829f = L.circleMarker(
+                [53.344303, -6.2504272],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_59f7d56a494803e78528921b55a9829f.bindTooltip(
+                `<div>
+                     PEARSE STREET: empties a little (+0.16)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be808083b771d9b6ed70ae2d0da40723 = L.circleMarker(
+                [53.349014, -6.260311],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_be808083b771d9b6ed70ae2d0da40723.bindTooltip(
+                `<div>
+                     PRINCES STREET / O'CONNELL STREET: empties in the morning (+0.14)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_581ac6921853b322f789961101326237 = L.circleMarker(
+                [53.331383, -6.265023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_581ac6921853b322f789961101326237.bindTooltip(
+                `<div>
+                     LENNOX STREET: empties in the morning (-0.45)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7dbd1362ed4b7eddb576f200a67f3f2c = L.circleMarker(
+                [53.34769, -6.278214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_7dbd1362ed4b7eddb576f200a67f3f2c.bindTooltip(
+                `<div>
+                     SMITHFIELD: empties in the morning (-0.16)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57d351f8f35b8fa961d6fec447241aa0 = L.circleMarker(
+                [53.337635, -6.256218],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_57d351f8f35b8fa961d6fec447241aa0.bindTooltip(
+                `<div>
+                     ST. STEPHEN'S GREEN EAST: fills in the morning (+0.39)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_205beca5f343ffd1378c00ba1dcb031c = L.circleMarker(
+                [53.337494, -6.26199],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_205beca5f343ffd1378c00ba1dcb031c.bindTooltip(
+                `<div>
+                     ST. STEPHEN'S GREEN SOUTH: steady, mostly empty (+0.17)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_378adc0f5e11ff281db8d696795fa463 = L.circleMarker(
+                [53.350998, -6.252661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_378adc0f5e11ff281db8d696795fa463.bindTooltip(
+                `<div>
+                     TALBOT STREET: empties in the morning (-0.20)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e315f628c7e068868680a9e9e87be83 = L.circleMarker(
+                [53.332382, -6.252717],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_6e315f628c7e068868680a9e9e87be83.bindTooltip(
+                `<div>
+                     WILTON TERRACE: steady, mostly empty (-0.02)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ef72048026627e2264924ba8942594b = L.circleMarker(
+                [53.3483, -6.266651],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_9ef72048026627e2264924ba8942594b.bindTooltip(
+                `<div>
+                     JERVIS STREET: empties a little (+0.15)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27a6fbb45c1beb0a343a2c6bd96ab12e = L.circleMarker(
+                [53.332417, -6.2578697],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_27a6fbb45c1beb0a343a2c6bd96ab12e.bindTooltip(
+                `<div>
+                     HARCOURT TERRACE: empties a little (-0.23)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1897139e02375f83bc0fc3d7247f5122 = L.circleMarker(
+                [53.349564, -6.2781982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_1897139e02375f83bc0fc3d7247f5122.bindTooltip(
+                `<div>
+                     SMITHFIELD NORTH: empties in the morning (-0.30)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a82d4fbdd41a97ffed82547aa362bd85 = L.circleMarker(
+                [53.33009, -6.268044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_a82d4fbdd41a97ffed82547aa362bd85.bindTooltip(
+                `<div>
+                     PORTOBELLO ROAD: empties in the morning (-0.58)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5a4816a154a280ed6a062c721ce241c = L.circleMarker(
+                [53.358593, -6.2602983],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d5a4816a154a280ed6a062c721ce241c.bindTooltip(
+                `<div>
+                     UPPER SHERRARD STREET: empties a little (-0.34)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1988328ceaaeb981b474b7e7544b5664 = L.circleMarker(
+                [53.351463, -6.255265],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_1988328ceaaeb981b474b7e7544b5664.bindTooltip(
+                `<div>
+                     DEVERELL PLACE: empties a little (-0.25)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ed48b717b4b82eb082c14529aa81bee = L.circleMarker(
+                [53.335743, -6.24551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_5ed48b717b4b82eb082c14529aa81bee.bindTooltip(
+                `<div>
+                     HERBERT STREET: fills in the morning (+0.32)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeecc31d9a2437454ed40515b52caa25 = L.circleMarker(
+                [53.34778, -6.244239],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_aeecc31d9a2437454ed40515b52caa25.bindTooltip(
+                `<div>
+                     EXCISE WALK: empties a little (-0.07)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de2c44d0a826668b1a2142549ece3d6f = L.circleMarker(
+                [53.34793, -6.240928],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_de2c44d0a826668b1a2142549ece3d6f.bindTooltip(
+                `<div>
+                     GUILD STREET: empties a little (-0.12)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd752f3faebb1200cec9ce7cb16becff = L.circleMarker(
+                [53.35023, -6.279696],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_fd752f3faebb1200cec9ce7cb16becff.bindTooltip(
+                `<div>
+                     GEORGES LANE: empties a little (-0.32)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84f0a70a3fed42b1006b7b502fb92acb = L.circleMarker(
+                [53.339333, -6.264699],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_84f0a70a3fed42b1006b7b502fb92acb.bindTooltip(
+                `<div>
+                     YORK STREET WEST: steady, mostly empty (-0.02)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3290c976dc24c2cb8641ffad3e29d4ac = L.circleMarker(
+                [53.338757, -6.262003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_3290c976dc24c2cb8641ffad3e29d4ac.bindTooltip(
+                `<div>
+                     YORK STREET EAST: fills in the morning (+0.26)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_840e8ef1736becfeacd7da17c20c9903 = L.circleMarker(
+                [53.33713, -6.26059],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_840e8ef1736becfeacd7da17c20c9903.bindTooltip(
+                `<div>
+                     NEWMAN HOUSE: fills in the morning (+0.31)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2af57653a7f5ee2e12362b90f7f2209a = L.circleMarker(
+                [53.33602, -6.26298],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2af57653a7f5ee2e12362b90f7f2209a.bindTooltip(
+                `<div>
+                     CLONMEL STREET: steady, mostly empty (+0.26)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12d5b11acddccaecc3cd601e006631ad = L.circleMarker(
+                [53.33403, -6.260714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_12d5b11acddccaecc3cd601e006631ad.bindTooltip(
+                `<div>
+                     HATCH STREET: fills in the morning (+0.49)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9123ecb5ad356774ea7f74a19a03706 = L.circleMarker(
+                [53.337986, -6.241539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_b9123ecb5ad356774ea7f74a19a03706.bindTooltip(
+                `<div>
+                     MOUNT STREET LOWER: fills in the morning (+0.31)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0ec8c5d26d7dbc1ab5c0b8ef5a4cbfe = L.circleMarker(
+                [53.33963, -6.243778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_e0ec8c5d26d7dbc1ab5c0b8ef5a4cbfe.bindTooltip(
+                `<div>
+                     GRATTAN STREET: fills in the morning (+0.21)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2aa5fd895e1339f6ddbd526d6e28ac1c = L.circleMarker(
+                [53.33922, -6.240642],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2aa5fd895e1339f6ddbd526d6e28ac1c.bindTooltip(
+                `<div>
+                     SIR PATRICK DUN'S: fills in the morning (+0.29)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8db511169104e018d84bf84f524e23e1 = L.circleMarker(
+                [53.35561, -6.261397],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_8db511169104e018d84bf84f524e23e1.bindTooltip(
+                `<div>
+                     DENMARK STREET GREAT: steady, mostly empty (+0.14)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2298511d859322bb42ffa41dbc538a7d = L.circleMarker(
+                [53.359623, -6.260348],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2298511d859322bb42ffa41dbc538a7d.bindTooltip(
+                `<div>
+                     NORTH CIRCULAR ROAD: empties in the morning (-0.43)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c58a6da1f4ecf34a24bccb9e46bb918b = L.circleMarker(
+                [53.357044, -6.263232],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_c58a6da1f4ecf34a24bccb9e46bb918b.bindTooltip(
+                `<div>
+                     HARDWICKE PLACE: steady, mostly empty (+0.03)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f80f6bc4d04b7e242eef5da897dc8528 = L.circleMarker(
+                [53.346027, -6.243576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_f80f6bc4d04b7e242eef5da897dc8528.bindTooltip(
+                `<div>
+                     LIME STREET: fills in the morning (+0.45)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0e7abee3fe1dac738e42ee6b90bc685 = L.circleMarker(
+                [53.341427, -6.24672],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_a0e7abee3fe1dac738e42ee6b90bc685.bindTooltip(
+                `<div>
+                     FENIAN STREET: empties a little (+0.05)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff947eff3ca659f1752fec922d081adf = L.circleMarker(
+                [53.345203, -6.247163],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_ff947eff3ca659f1752fec922d081adf.bindTooltip(
+                `<div>
+                     SANDWITH STREET: empties a little (-0.05)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_044a1e011d4a50b950970c38f07204ab = L.circleMarker(
+                [53.34744, -6.238523],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_044a1e011d4a50b950970c38f07204ab.bindTooltip(
+                `<div>
+                     CONVENTION CENTRE: fills in the morning (+0.61)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b16cbe2ae110b3a134a08aa668d5316 = L.circleMarker(
+                [53.347122, -6.234749],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_5b16cbe2ae110b3a134a08aa668d5316.bindTooltip(
+                `<div>
+                     NEW CENTRAL BANK: empties a little (+0.11)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2afa2b4f6ff5f078578796722ac02c6c = L.circleMarker(
+                [53.346867, -6.230852],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2afa2b4f6ff5f078578796722ac02c6c.bindTooltip(
+                `<div>
+                     THE POINT: empties a little (-0.09)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bb069e3ec6d94835833ab7d8b72168b = L.circleMarker(
+                [53.344116, -6.237153],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_4bb069e3ec6d94835833ab7d8b72168b.bindTooltip(
+                `<div>
+                     HANOVER QUAY: fills in the morning (+0.51)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9a6dcbc340687724338d28290aa054f = L.circleMarker(
+                [53.342636, -6.238695],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d9a6dcbc340687724338d28290aa054f.bindTooltip(
+                `<div>
+                     GRAND CANAL DOCK: fills in the morning (+0.44)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58adea5652acd0afd6bd58d4a7f36861 = L.circleMarker(
+                [53.33831, -6.236779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_58adea5652acd0afd6bd58d4a7f36861.bindTooltip(
+                `<div>
+                     BARROW STREET: empties in the morning (-0.13)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63726ae81c2952fd68973ac337795a4a = L.circleMarker(
+                [53.337757, -6.2676992],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_63726ae81c2952fd68973ac337795a4a.bindTooltip(
+                `<div>
+                     KEVIN STREET: steady, mostly empty (+0.03)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_369d7ff3fae6e0488cbe10e1580b1d88 = L.circleMarker(
+                [53.343105, -6.277167],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_369d7ff3fae6e0488cbe10e1580b1d88.bindTooltip(
+                `<div>
+                     JOHN STREET WEST: steady, mostly empty (-0.10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7297d85c319800bcfbed626c346e1b6e = L.circleMarker(
+                [53.34208, -6.275233],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_7297d85c319800bcfbed626c346e1b6e.bindTooltip(
+                `<div>
+                     FRANCIS STREET: empties a little (-0.37)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba6bc92470ca9dc8d6b89dfa198fa5fc = L.circleMarker(
+                [53.34389, -6.280531],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_ba6bc92470ca9dc8d6b89dfa198fa5fc.bindTooltip(
+                `<div>
+                     OLIVER BOND STREET: empties a little (-0.23)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_998d797160604ffef61efa1b40ede346 = L.circleMarker(
+                [53.343456, -6.287409],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_998d797160604ffef61efa1b40ede346.bindTooltip(
+                `<div>
+                     JAMES STREET: empties a little (-0.23)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d291bbbc1deb8ce352e1df665d635e47 = L.circleMarker(
+                [53.342297, -6.287661],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d291bbbc1deb8ce352e1df665d635e47.bindTooltip(
+                `<div>
+                     MARKET STREET SOUTH: empties a little (-0.28)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18181df2ffa0def0f4d9b46234cdae2d = L.circleMarker(
+                [53.348873, -6.267459],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_18181df2ffa0def0f4d9b46234cdae2d.bindTooltip(
+                `<div>
+                     WOLFE TONE STREET: empties a little (-0.08)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca59b27152fc906353e5593d2a35090b = L.circleMarker(
+                [53.359966, -6.264828],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_ca59b27152fc906353e5593d2a35090b.bindTooltip(
+                `<div>
+                     MATER HOSPITAL: steady, mostly empty (-0.10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a6f03bc55bdcb139cc873f4f8d4eb0f = L.circleMarker(
+                [53.358116, -6.265601],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_1a6f03bc55bdcb139cc873f4f8d4eb0f.bindTooltip(
+                `<div>
+                     ECCLES STREET EAST: steady, mostly empty (+0.23)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34963fca87a1c437f76a1e50d16a23e9 = L.circleMarker(
+                [53.34136, -6.292951],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_34963fca87a1c437f76a1e50d16a23e9.bindTooltip(
+                `<div>
+                     ST JAMES HOSPITAL (LUAS): empties a little (+0.01)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85c9a0f506e515b77ec5e8bc362df6be = L.circleMarker(
+                [53.341644, -6.29719],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_85c9a0f506e515b77ec5e8bc362df6be.bindTooltip(
+                `<div>
+                     MOUNT BROWN: empties a little (-0.34)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_166bd1183fe9d23ddc00e3e01d03335f = L.circleMarker(
+                [53.340714, -6.308191],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_166bd1183fe9d23ddc00e3e01d03335f.bindTooltip(
+                `<div>
+                     EMMET ROAD: empties in the morning (-0.32)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9c0af9c8155381cb8a11e0f6cf58c99 = L.circleMarker(
+                [53.339005, -6.300217],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_c9c0af9c8155381cb8a11e0f6cf58c99.bindTooltip(
+                `<div>
+                     BROOKFIELD ROAD: empties in the morning (-0.30)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b1fd6da372a9e5f6a487c9c513bac2c = L.circleMarker(
+                [53.338776, -6.30395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2b1fd6da372a9e5f6a487c9c513bac2c.bindTooltip(
+                `<div>
+                     ROTHE ABBEY: empties in the morning (-0.32)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfbdcfa3f7ec2a9390132f2a14b828c9 = L.circleMarker(
+                [53.347973, -6.291804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_cfbdcfa3f7ec2a9390132f2a14b828c9.bindTooltip(
+                `<div>
+                     PARKGATE STREET: empties in the morning (-0.68)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bac84595a6efa1422d38313fcc8872ca = L.circleMarker(
+                [53.347477, -6.28525],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_bac84595a6efa1422d38313fcc8872ca.bindTooltip(
+                `<div>
+                     COLLINS BARRACKS MUSEUM: empties in the morning (-0.33)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e175eac1708e3900d40d599ce4453a39 = L.circleMarker(
+                [53.3488, -6.281637],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_e175eac1708e3900d40d599ce4453a39.bindTooltip(
+                `<div>
+                     BLACKHALL PLACE: empties in the morning (-0.40)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e095cb3c71a2982135ea62f087e0356c = L.circleMarker(
+                [53.335213, -6.2509],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_e095cb3c71a2982135ea62f087e0356c.bindTooltip(
+                `<div>
+                     FITZWILLIAM SQUARE EAST: steady, mostly empty (+0.17)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a9742199f4ca3e946aab0755da7aa18 = L.circleMarker(
+                [53.344154, -6.233451],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_8a9742199f4ca3e946aab0755da7aa18.bindTooltip(
+                `<div>
+                     BENSON STREET: fills in the morning (+0.69)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b72c50337ccd64d5ed04bd3957099694 = L.circleMarker(
+                [53.34183, -6.231291],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_b72c50337ccd64d5ed04bd3957099694.bindTooltip(
+                `<div>
+                     SOUTH DOCK ROAD: empties in the morning (-0.35)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4375ad2874cfb8ec75133a0a22cf2a8c = L.circleMarker(
+                [53.3478, -6.292432],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_4375ad2874cfb8ec75133a0a22cf2a8c.bindTooltip(
+                `<div>
+                     HEUSTON BRIDGE (NORTH): empties in the morning (-0.63)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1098e7b903a74362faffc448aa44d7a6 = L.circleMarker(
+                [53.346603, -6.296924],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_1098e7b903a74362faffc448aa44d7a6.bindTooltip(
+                `<div>
+                     HEUSTON STATION (CENTRAL): empties in the morning (-0.77)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09d51b4e04d6ae26b05403db5d2f989f = L.circleMarker(
+                [53.346985, -6.297804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_09d51b4e04d6ae26b05403db5d2f989f.bindTooltip(
+                `<div>
+                     HEUSTON STATION (CAR PARK): empties in the morning (-0.37)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7024044b86cc4f69acb81f7cbfe8dda5 = L.circleMarker(
+                [53.3439, -6.29706],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_7024044b86cc4f69acb81f7cbfe8dda5.bindTooltip(
+                `<div>
+                     ROYAL HOSPITAL: empties a little (-0.28)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b27119f19eee0c98d35e785e2fd9af4 = L.circleMarker(
+                [53.341805, -6.305085],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_8b27119f19eee0c98d35e785e2fd9af4.bindTooltip(
+                `<div>
+                     KILMAINHAM LANE: empties a little (-0.19)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52b72604735928d3bf3c14b656d94dc6 = L.circleMarker(
+                [53.342113, -6.310015],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_52b72604735928d3bf3c14b656d94dc6.bindTooltip(
+                `<div>
+                     KILMAINHAM GAOL: empties in the morning (-0.40)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9896fd889cc8590547480945e4c73f3a = L.circleMarker(
+                [53.341515, -6.256853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_9896fd889cc8590547480945e4c73f3a.bindTooltip(
+                `<div>
+                     FREDERICK STREET SOUTH: fills in the morning (+0.31)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e2445accd1dbcc7906b317b11dc3d78 = L.circleMarker(
+                [53.346638, -6.246154],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_4e2445accd1dbcc7906b317b11dc3d78.bindTooltip(
+                `<div>
+                     CITY QUAY: fills in the morning (+0.37)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10ec7efa4bf103e9a9def0db9d1c9596 = L.circleMarker(
+                [53.347107, -6.292041],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_10ec7efa4bf103e9a9def0db9d1c9596.bindTooltip(
+                `<div>
+                     HEUSTON BRIDGE (SOUTH): empties in the morning (-0.76)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c2439df1132b01933997b0c82459f01 = L.circleMarker(
+                [53.350292, -6.273507],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_5c2439df1132b01933997b0c82459f01.bindTooltip(
+                `<div>
+                     KING STREET NORTH: steady, mostly empty (-0.25)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54a77a73de7c733e5f0023814e23430d = L.circleMarker(
+                [53.35493, -6.269425],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_54a77a73de7c733e5f0023814e23430d.bindTooltip(
+                `<div>
+                     WESTERN WAY: steady, mostly empty (-0.08)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb145086d65063ab831d7e2fbdf3d56b = L.circleMarker(
+                [53.354664, -6.278681],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_fb145086d65063ab831d7e2fbdf3d56b.bindTooltip(
+                `<div>
+                     GRANGEGORMAN LOWER (SOUTH): steady, mostly empty (+0.12)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70555e4188342883787fb8f968b986ec = L.circleMarker(
+                [53.35517, -6.278424],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_70555e4188342883787fb8f968b986ec.bindTooltip(
+                `<div>
+                     GRANGEGORMAN LOWER (CENTRAL): steady, mostly empty (-0.00)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35fea25cf9006132818530696f2c1d7d = L.circleMarker(
+                [53.355953, -6.278378],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_35fea25cf9006132818530696f2c1d7d.bindTooltip(
+                `<div>
+                     GRANGEGORMAN LOWER (NORTH): steady, mostly empty (-0.10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd45e14815ddfac28cbcf9aa11f266f5 = L.circleMarker(
+                [53.35893, -6.280337],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_bd45e14815ddfac28cbcf9aa11f266f5.bindTooltip(
+                `<div>
+                     RATHDOWN ROAD: empties a little (-0.15)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4fa50860317f350d54dc3315987a4c2 = L.circleMarker(
+                [53.359158, -6.281866],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d4fa50860317f350d54dc3315987a4c2.bindTooltip(
+                `<div>
+                     CHARLEVILLE ROAD: empties a little (-0.23)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3dfc706110b4d6326b69016b05950941 = L.circleMarker(
+                [53.359406, -6.276142],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_3dfc706110b4d6326b69016b05950941.bindTooltip(
+                `<div>
+                     AVONDALE ROAD: empties a little (-0.16)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d703df19730ffab30404acc001f3b19 = L.circleMarker(
+                [53.353333, -6.249319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_2d703df19730ffab30404acc001f3b19.bindTooltip(
+                `<div>
+                     BUCKINGHAM STREET LOWER: empties in the morning (-0.18)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db0605a49df36c2d0c7f555019250ed7 = L.circleMarker(
+                [53.356308, -6.273717],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_db0605a49df36c2d0c7f555019250ed7.bindTooltip(
+                `<div>
+                     PHIBSBOROUGH ROAD: steady, mostly empty (-0.11)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55302b304918b15b805df975e9a4fc3e = L.circleMarker(
+                [53.356716, -6.256359],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_55302b304918b15b805df975e9a4fc3e.bindTooltip(
+                `<div>
+                     MOUNTJOY SQUARE EAST: steady, mostly empty (-0.13)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfb94ddcea37cdf59ec30145703003ba = L.circleMarker(
+                [53.35784, -6.251557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_bfb94ddcea37cdf59ec30145703003ba.bindTooltip(
+                `<div>
+                     NORTH CIRCULAR ROAD (O'CONNELL'S): empties in the morning (-0.52)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5967b05a9fa0e359ff83813be19573b = L.circleMarker(
+                [53.338615, -6.248606],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_c5967b05a9fa0e359ff83813be19573b.bindTooltip(
+                `<div>
+                     MERRION SQUARE SOUTH: steady, mostly empty (+0.21)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_390ecad705d7fb69b7917b062758cb13 = L.circleMarker(
+                [53.333652, -6.248345],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_390ecad705d7fb69b7917b062758cb13.bindTooltip(
+                `<div>
+                     WILTON TERRACE (PARK): fills in the morning (+0.66)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8e0acca4e095e686143ae4164fe9656 = L.circleMarker(
+                [53.354843, -6.247579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_a8e0acca4e095e686143ae4164fe9656.bindTooltip(
+                `<div>
+                     KILLARNEY STREET: empties in the morning (-0.72)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1d9e8d9fd6cf538ede9b7d39c5d5c26 = L.circleMarker(
+                [53.3547, -6.272314],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_d1d9e8d9fd6cf538ede9b7d39c5d5c26.bindTooltip(
+                `<div>
+                     BROADSTONE: steady, mostly empty (-0.10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6d828dcfd93af6b384d985c1adf25c8 = L.circleMarker(
+                [53.343655, -6.231755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b4f223a4c67eda78de54fd57179040f1);
+        
+    
+            circle_marker_a6d828dcfd93af6b384d985c1adf25c8.bindTooltip(
+                `<div>
+                     HANOVER QUAY EAST: fills in the morning (+0.53)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
