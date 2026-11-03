@@ -8,6 +8,9 @@ answer *"will station X have a bike in 30 minutes?"*. Predictions are served thr
 API and a Streamlit dashboard, and every live prediction is logged so its accuracy can be
 checked against what really happened.
 
+**Live dashboard:** https://dublin-bikes-predictor-xemaugbi5xtyxcss4hkhzs.streamlit.app/
+(it sleeps when unused and takes about 30 seconds to wake; the scheme itself closes roughly 00:30 to 05:00)
+
 ## Questions
 
 1. How many bikes will be at station X in Y minutes? (regression, Y = 10, 30, 60)
