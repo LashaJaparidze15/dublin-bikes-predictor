@@ -22,6 +22,13 @@ def _connect():
     return psycopg.connect(_db_url(), autocommit=True)
 
 
+def _query(sql: str, params: dict) -> pd.DataFrame:
+    """Run a SELECT and return a DataFrame (plain psycopg, so pandas does not warn about it)."""
+    with _connect() as conn, conn.cursor() as cur:
+        cur.execute(sql, params)
+        return pd.DataFrame(cur.fetchall(), columns=[d.name for d in cur.description])
+
+
 def save_stations(stations: pd.DataFrame) -> None:
     if not _db_url():
         LIVE_DIR.mkdir(parents=True, exist_ok=True)
@@ -67,9 +74,8 @@ def recent_snapshots(minutes: int = 80) -> pd.DataFrame:
         df = pd.concat([pd.read_parquet(f) for f in files])
         df = df[df["last_reported"] >= since]
     else:
-        with _connect() as conn:
-            df = pd.read_sql("select * from snapshots where last_reported >= %(since)s", conn,
-                             params={"since": since.to_pydatetime()})
+        df = _query("select * from snapshots where last_reported >= %(since)s",
+                    {"since": since.to_pydatetime()})
     return df.rename(columns={"bikes": "num_bikes_available", "docks": "num_docks_available"})
 
 
@@ -94,7 +100,5 @@ def prediction_accuracy(days: int = 14) -> pd.DataFrame:
     """Predictions joined to what really happened (only works with the database)."""
     if not _db_url():
         return pd.DataFrame()
-    with _connect() as conn:
-        return pd.read_sql(
-            "select * from prediction_accuracy where made_at >= now() - make_interval(days => %(d)s)",
-            conn, params={"d": days})
+    return _query("select * from prediction_accuracy where made_at >= now() - make_interval(days => %(d)s)",
+                  {"d": days})

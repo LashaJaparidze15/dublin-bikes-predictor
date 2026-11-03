@@ -58,3 +58,10 @@ join lateral (
     order by s.last_reported desc
     limit 1
 ) s on true;
+
+-- Supabase exposes the public schema through its REST API. Turning on row-level security with
+-- no policies blocks that API completely; the collector connects as the table owner, which
+-- RLS does not apply to, so it keeps working.
+alter table stations    enable row level security;
+alter table snapshots   enable row level security;
+alter table predictions enable row level security;
